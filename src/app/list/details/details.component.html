@@ -1,0 +1,19 @@
+
+<div class="row" style="background-color: rgba(128, 128, 128, 0.594); height: 110vh; width: 225vh;">
+    <div class="col xs 12">
+        <button style="background-color: black; color: white; width: 30vh; height: 10vh;" (click)="setCondition(BOOL)" >Return</button>
+        <h1 style="margin-left: 42%; text-decoration: underline;">{{DetailName}}</h1>
+        <br><br>
+        <div style="align-items: center; display: flex; flex-direction: row;">
+            <img src="{{DetailImage}}" alt="{{DetailName}}" style="margin-left: 10%; border: 2px solid black; padding: 3vh 3vh 3vh; border-radius: 5px;">
+            <div style="display: flex; flex-direction: column;">
+                <h3 style="margin-left: 5vh;"> <strong>Price:</strong> <br><span style="margin-left: 10vh;">{{DetailPrice}}</span></h3>
+                <button class="btn btn-secondary" style="margin: 5vh 5vh; color: white; background-color: black; font-size: 5vh;" (click)="addCartItem()">Add To Cart</button>
+            </div>
+            
+        </div>
+        <h5 style="margin-left: 10%; margin-top: 5vh;"><strong>Details:</strong> <br> <span style="margin-left: 10vh;">{{DetailDetail}}</span></h5>
+    </div>
+</div>
+
+

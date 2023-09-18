@@ -1,0 +1,12 @@
+<div class="container" *ngIf="NavValue === 'Home'">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="row">
+          <app-items *ngFor="let n of Products" [Items]="n" class="col-xs-12 col-sm-6 col-md-3"></app-items>
+        </div>
+      </div>
+    </div>
+  </div>
+<div *ngIf="!ConditionFromService">
+    <app-details></app-details>
+</div>

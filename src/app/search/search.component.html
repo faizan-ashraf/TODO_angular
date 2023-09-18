@@ -1,0 +1,14 @@
+<div class="col" >
+    <input type="text" [(ngModel)]="search" placeholder="Search" style="width: 50%; margin-top: 1%; margin-bottom: 1%; border: 2px solid black; border-top-left-radius: 20px; border-bottom-left-radius: 20px; padding: 1vh 2vh; height: 7vh; margin-left: 25%;" (ngModelChange)="onSearchChange($event)">
+<button style="height: 3%; margin-top: 1%; border-top-right-radius: 20px; border-bottom-right-radius: 20px; background-color: black; color: white ; border: 2px solid black; height: 7vh;" (click)="onSearchPress()">Search</button>
+<div class="container" *ngIf="bool && search !== ''">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="row">
+          <app-items *ngFor="let n of dataToSearch" [Items]="n" class="col-xs-12 col-sm-6 col-md-3"></app-items>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+

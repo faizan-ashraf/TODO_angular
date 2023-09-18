@@ -1,0 +1,2 @@
+<button class="btn btn-secondary" style="background-color: black; color: white; width: 20vh; height: 10vh; margin-left: 90%;" (click)="setCartPermission()">{{CartPer? 'Cancel' : 'Edit'}}</button>
+<app-cartitem *ngFor="let n of myCart; let i = index" [CartItem]="n"></app-cartitem>

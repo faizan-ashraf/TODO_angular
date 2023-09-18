@@ -1,0 +1,20 @@
+<div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+    <div class="card" style="width: 40vh; border: 2px solid black; margin-top: 2vh; margin-left: 2vh;">
+        <img src="{{CartItem.image}}" class="card-img-top" alt="{{CartItem?.name}}" style="height: 20vh; width: 20vh; border: 2px solid rgb(204, 204, 204); margin: 2vh 2vh;">
+        <div class="card-body">
+          <h5 class="card-title">{{CartItem?.name}}</h5>
+          <p class="card-text"> <strong>{{CartItem?.price}}</strong></p>
+        </div>
+    </div>
+    <a
+    class="btn btn-danger" 
+    style=" margin-left: 10vh;" 
+    *ngIf="CartPer" 
+    (click)="RemoveItem()"
+    ><-Remove</a>
+</div>
+
+
+
+
+

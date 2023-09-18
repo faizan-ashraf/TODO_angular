@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-xs-12">
+    <app-header></app-header>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <app-search style="display: flex; justify-content: center;" *ngIf="CartBool" ></app-search> 
+  </div>
+</div>
+
+<div class="row" *ngIf="NavigatorValue === 'Home'">
+  <div class="col-xl-12">
+    <app-list></app-list>
+  </div>
+</div>
+
+<div class="row" *ngIf="NavigatorValue === 'Cart'">
+  <div class="col-xl-12">
+    <app-cart></app-cart>
+  </div>
+</div>

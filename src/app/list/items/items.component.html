@@ -1,0 +1,10 @@
+<div class="card" style="width: 40vh; border: 2px solid black; margin-top: 2vh; margin-left: 2vh;" *ngIf="ConditionFromService">
+    <img src="{{Items.image}}" class="card-img-top" alt="{{Items?.name}}" style="height: 20vh; width: 20vh; border: 2px solid rgb(204, 204, 204); margin: 2vh 2vh;">
+    <div class="card-body">
+      <h5 class="card-title">{{Items?.name}}</h5>
+      <p class="card-text"> <strong>{{Items?.price}}</strong></p>
+      <a href="#" class="btn btn-secondary" style=" background-color: black; color: white;" (click)="setConditionService(condition)">View Details</a>
+      <button href="#" class="btn btn-secondary" style="margin-left: 1vh; background-color: black; color: white;" (click)="addCartItem()">Cart</button>
+    </div>
+</div>
+
